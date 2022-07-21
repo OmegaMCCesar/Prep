@@ -27,7 +27,7 @@ const {
 } = require('../homework');
 
 describe('devolverUltimoElemento(arr)', function() {
-  it('should return the last item in the array', function() {
+  xit('should return the last item in the array', function() {
     expect(devolverUltimoElemento([10, 10, 16, 12])).toBe(12);
     expect(devolverUltimoElemento([97, 100, 80, 55, 72, 94])).toBe(94);
     expect(devolverUltimoElemento(['hi', 'there', 'how', 'are', 'you', 'doing?'])).toBe('doing?');
@@ -35,7 +35,7 @@ describe('devolverUltimoElemento(arr)', function() {
 });
 
 describe('incrementarPorUno(arr)', function() {
-  it('should return the array with each value incremented by one', function() {
+  xit('should return the array with each value incremented by one', function() {
     expect(incrementarPorUno([10, 10, 16, 12])).toEqual([11, 11, 17, 13]);
     expect(incrementarPorUno([97, 100, 80, 55, 72, 94])).toEqual([98, 101, 81, 56, 73, 95]);
     expect(incrementarPorUno([])).toEqual([]);
@@ -43,7 +43,7 @@ describe('incrementarPorUno(arr)', function() {
 });
 
 describe('agregarItemAlFinalDelArray(arr, item)', function() {
-  it('should return the array with the item added to the end', function() {
+  xit('should return the array with the item added to the end', function() {
     expect(agregarItemAlFinalDelArray([10, 10, 16, 12], 10)).toEqual([10, 10, 16, 12, 10]);
     expect(agregarItemAlFinalDelArray([97, 100, 80, 55, 72, 94], 'Hola')).toEqual([97, 100, 80, 55, 72, 94, 'Hola']);
     expect(agregarItemAlFinalDelArray([], true)).toEqual([true]);
@@ -51,14 +51,14 @@ describe('agregarItemAlFinalDelArray(arr, item)', function() {
 });
 
 describe('dePalabrasAFrase(words)', function() {
-  it('should return a string that has all of the words from the array separated by spaces', function() {
+  xit('should return a string that has all of the words from the array separated by spaces', function() {
     expect(dePalabrasAFrase(['Henry', 'JavaScript', 'Class'])).toBe('Henry JavaScript Class');
     expect(dePalabrasAFrase(['Henry'])).toBe('Henry');
   });
 });
 
 describe('arrayContiene(arr, item)', function() {
-  it('should return true if the array contains the item', function() {
+  xit('should return true if the array contains the item', function() {
     expect(arrayContiene([10, 10, 16, 12], 10)).toBe(true);
     expect(arrayContiene([97, 100, 80, 55, 72, 94], 'Hola')).toBe(false);
     expect(arrayContiene([], true)).toBe(false);
@@ -66,14 +66,14 @@ describe('arrayContiene(arr, item)', function() {
 });
 
 describe('promedioResultadosTest(testScores)', function() {
-  it('should return the average test score', function() {
+  xit('should return the average test score', function() {
     expect(promedioResultadosTest([10, 10, 16, 12])).toBe(12);
     expect(promedioResultadosTest([97, 100, 80, 55, 72, 94])).toBe(83);
   });
 });
 
 describe('numeroMasGrande(numbers)', function() {
-  it('should return the largest number', function() {
+  xit('should return the largest number', function() {
     expect(numeroMasGrande([10, 10, 16, 12])).toBe(16);
     expect(numeroMasGrande([97, 100, 80, 55, 72, 94])).toBe(100);
     expect(numeroMasGrande([97, 10000, 80, 55, 7.2, -94])).toBe(10000);
@@ -81,7 +81,7 @@ describe('numeroMasGrande(numbers)', function() {
 });
 
 describe('multiplicarArgumentos()', function () {
-  it('should return the product of all the arguments', function () {
+  xit('should return the product of all the arguments', function () {
     const product = multiplicarArgumentos(5, 5);
     const product2 = multiplicarArgumentos();
     const product3 = multiplicarArgumentos(3, 3, 3, 3);
@@ -96,7 +96,7 @@ describe('multiplicarArgumentos()', function () {
 });
 
 describe('cuentoElementos(arreglo)', function() {
-  it('should return a counter with the total of numbers greater than 18', function() {
+  xit('should return a counter with the total of numbers greater than 18', function() {
     expect(cuentoElementos([10, 10, 18, 21])).toBe(1);
     expect(cuentoElementos([97, 100, 190, 5, 7, 9])).toBe(3);
     expect(cuentoElementos([97, 20, 90, 50, 7, 709])).toBe(5);
@@ -104,7 +104,7 @@ describe('cuentoElementos(arreglo)', function() {
 });
 
 describe('todosIguales(arreglo)', function() {
-  it('should return true if all the elements of the array are equal and false otherwise', function() {
+  xit('should return true if all the elements of the array are equal and false otherwise', function() {
     expect(todosIguales([20, 20, 20, 20 ])).toBe(true);
     expect(todosIguales([97, 100, 190, 9])).toBe(false);
    
@@ -113,7 +113,7 @@ describe('todosIguales(arreglo)', function() {
 });
 
 describe('mesesDelAño(array)', function() {
-  it('should return a new array with the requested months', function() {
+  xit('should return a new array with the requested months', function() {
     var ok = ["Marzo", "Diciembre", "Abril", "Junio", "Julio", "Noviembre", "Enero", "Mayo", "Febrero"];
     var wrong = ["Marzo", "Diciembre", "Julio", "Noviembre"];
     expect(mesesDelAño(ok)).toEqual(["Marzo", "Noviembre", "Enero"]);
@@ -122,23 +122,23 @@ describe('mesesDelAño(array)', function() {
 });
 
 describe('breakStatement(numero)', function() {
-  it('should return an array with the values ​​resulting from adding 2 in each iteration', function() {
+  xit('should return an array with the values ​​resulting from adding 2 in each iteration', function() {
     expect(breakStatement(50)).toEqual([52, 54, 56, 58, 60, 62, 64, 66, 68, 70]);
   });
-  it('should stop the execution if the sum value and the iteration number match', function() {
+  xit('should stop the execution if the sum value and the iteration number match', function() {
     expect(breakStatement(-4)).toEqual('Se interrumpió la ejecución');
   });
 });
 
 describe('continueStatement(numero)', function() {
-  it('should return an array with the values ​​resulting from adding 2 in each iteration when the iteration number is different from 5', function() {
+  xit('should return an array with the values ​​resulting from adding 2 in each iteration when the iteration number is different from 5', function() {
     expect(continueStatement(50)).toEqual([52, 54, 56, 58, 60, 64, 66, 68, 70]);
     expect(continueStatement(-4)).toEqual([-2, 0, 2, 4, 6, 10, 12, 14, 16]);
   });
 });
 
 describe('crearGato(nombre, edad)', function() {
-  it('should create a new cat with the nombre and edad properties set', function() {
+  xit('should create a new cat with the nombre and edad properties set', function() {
     expect(crearGato('Snowball', 1).nombre).toBe('Snowball');
     expect(crearGato('Snowball', 1).edad).toBe(1);
     expect(crearGato('Snowball II', 5).nombre).toBe('Snowball II');
